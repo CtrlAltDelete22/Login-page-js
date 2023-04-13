@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    
+    background: #EB3349;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F45C43, #EB3349);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F45C43, #EB3349); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.btn
+{
+    padding: 10px 60px;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #fff;
+    
+    
+}
+.pop-up
+{
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup
+{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+
+
+}
+.pop-up img
+{
+    width: 140px;
+    margin-top: -75px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    
+}
+.pop-up h2
+{
+    font-size: 39px;
+    margin:  30px 0 10px;
+    font-weight: 600;
+}
+.pop-up button
+{
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 40px;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    background-color: rgb(24, 233, 52);
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+.pop-up button:hover
+{
+    background-color: #00c030;
+}
